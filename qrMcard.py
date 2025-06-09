@@ -104,6 +104,17 @@ for i, (label, varname) in enumerate(campos):
     entry.grid(row=i, column=1, pady=2)
     entries[varname] = entry
 
+entry_nombre = entries["entry_nombre"]
+entry_apellido = entries["entry_apellido"]
+entry_empresa = entries["entry_empresa"]
+entry_cargo = entries["entry_cargo"]
+entry_telefono = entries["entry_telefono"]
+entry_email = entries["entry_email"]
+entry_web = entries["entry_web"]
+entry_direccion = entries["entry_direccion"]
+entry_ciudad = entries["entry_ciudad"]
+entry_codpostal = entries["entry_codpostal"]
+entry_pais = entries["entry_pais"]
 globals().update(entries)
 
 tk.Label(root, text="Espacio central (0.1 - 0.7):").grid(row=len(campos), column=0, sticky="e")
